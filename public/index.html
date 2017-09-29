@@ -1,0 +1,72 @@
+<!doctype html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+        <form>
+          <div class="form-group">
+            <input id="userInput" type="number" class="form-control form-control-lg mb-2" placeholder="Enter A Number...">
+
+            <div class="card card-primary mb-2">
+
+              <select id="selectValue">
+                    <option value="default"></option>
+                    <option value="KG">KG</option>
+                    <option value="Pounds">Pounds</option>
+                    <option value="Ounce">Ounce</option>
+                    <option value="Grams">Grams</option>
+                  </select>
+            </div>
+
+          </div>
+        </form>
+        <div id="output">
+
+
+          <div id="gramCard" class="card card-primary mb-2">
+            <div class="card-block">
+              <h4>Grams:</h4>
+              <div id="gramsOutput"></div>
+            </div>
+          </div>
+
+
+          <div id="kgCard" class="card card-success mb-2">
+            <div class="card-block">
+              <h4>Kilograms:</h4>
+              <div id="kgOutput"></div>
+            </div>
+          </div>
+
+          <div id="ozCard" class="card card-danger mb-2">
+            <div class="card-block">
+              <h4>Ounces:</h4>
+              <div id="ozOutput"></div>
+            </div>
+          </div>
+          <div id="lbCard" class="card card-warning mb-2">
+            <div class="card-block">
+              <h4>Pounds:</h4>
+              <div id="lbOutput"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
